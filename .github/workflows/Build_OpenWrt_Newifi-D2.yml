@@ -23,8 +23,9 @@ on:
   # branches: 
   #  - master
         
-  # schedule: 
-  #  - cron: 07 3 * * 4
+  schedule: 
+   # - cron: 07 3 * * 4 
+     - cron: 0 */3 * * * 
         
   #watch:
   # types: [started]
