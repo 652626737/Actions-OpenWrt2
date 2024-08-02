@@ -13,15 +13,15 @@ name: Build OpenWrt Newifi-D2
 on:
   repository_dispatch:
   workflow_dispatch:
-    # inputs: 
-    #   ssh:
-    #     description: 'SSH connection to Actions' 
-    #     required: false
-    #     default: 'false'
+    inputs: 
+      ssh:
+        description: 'SSH connection to Actions' 
+        required: false
+        default: 'false' 
         
-  #push:
-  # branches: 
-  #  - master
+  push:
+  branches: 
+   - master
         
   schedule:
     - cron: 0 */3 * * *  
